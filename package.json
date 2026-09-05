@@ -1,4 +1,5 @@
 {
+  "description": "Práctica educativa para poner en práctica lo aprendido sobre inteligencia artificial, algoritmos y productos educativos.",
   "devDependencies": {
     "ia-project-indexer": "^1.8.0"
   }
