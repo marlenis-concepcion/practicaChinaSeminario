@@ -14,6 +14,12 @@ The preliminary seminar program runs from **August 28 to September 17, 2026**. T
 
 This project is an academic learning exercise and remains a work in progress. It is not a final submission or a completed product. It is awaiting feedback from the instructors teaching the seminar at Zhejiang Normal University, which will guide further revisions and improvements.
 
+### Academic purpose and independence statement
+
+This project is exclusively academic and non-commercial, with no intended use outside its educational purpose.
+
+As the author, I declare that I developed this project independently of my current and former employers and clients, without using their resources, confidential information, code, materials, or internal ideas or projects. This project does not represent their work, endorsement, or participation.
+
 ### Educational purpose
 
 Apply the knowledge gained during the seminar by designing and developing applications that address classroom needs. The work provides practice in structuring instructions, using algorithms, creating interfaces, and integrating artificial intelligence tools to develop educational products.
@@ -96,6 +102,12 @@ El programa preliminar del seminario abarca del **28 de agosto al 17 de septiemb
 ## Estado académico del proyecto
 
 Este proyecto es una práctica académica de aprendizaje y todavía se encuentra en desarrollo. No constituye un trabajo final ni un producto terminado. Está pendiente de recibir la retroalimentación de los docentes que imparten el seminario en la Universidad Normal de Zhejiang, cuyos comentarios orientarán las próximas revisiones y mejoras.
+
+## Declaración de finalidad académica e independencia
+
+Este proyecto tiene una finalidad exclusivamente académica y sin fines de lucro. No está destinado a utilizarse fuera de estos fines educativos.
+
+Como autora, declaro que desarrollé este proyecto de manera independiente de mis empleadores y clientes, actuales y anteriores, sin utilizar sus recursos, información confidencial, código, materiales ni ideas o proyectos internos. Este proyecto no representa su trabajo, respaldo o participación.
 
 ## Propósito educativo
 
