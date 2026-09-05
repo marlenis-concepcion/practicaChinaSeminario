@@ -1,0 +1,183 @@
+.info {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: 1.35rem;
+  height: 1.35rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  color: var(--primary);
+  background: transparent;
+  font-weight: 900;
+  vertical-align: middle;
+  line-height: 1;
+  flex: 0 0 1.35rem;
+}
+
+.info span {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + .55rem);
+  z-index: 20;
+  display: none;
+  width: min(17rem, 70vw);
+  padding: .7rem;
+  border-radius: .65rem;
+  color: #fff;
+  background: #17233d;
+  box-shadow: 0 .6rem 1.5rem #0004;
+  font-size: .8rem;
+  font-weight: 600;
+  line-height: 1.35;
+  text-align: left;
+  transform: translateX(-50%);
+}
+
+.info:hover span,
+.info:focus span,
+.info:focus-visible span {
+  display: block;
+}
+
+.upload-card strong,
+.form-grid label > span,
+.consent > span {
+  align-items: center;
+  gap: .3rem;
+}
+
+.upload-card strong {
+  display: flex;
+}
+
+.form-grid label > span {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.loading-card {
+  display: grid;
+  justify-items: center;
+  gap: .65rem;
+  margin-top: 1rem;
+  padding: 1.2rem;
+  border: 2px solid var(--border);
+  border-radius: 1rem;
+  background: var(--soft);
+  text-align: center;
+}
+
+.loading-card progress {
+  width: min(32rem, 100%);
+  height: 1rem;
+  accent-color: var(--primary);
+}
+
+.mode-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1rem 0; }
+.mode-card { display: flex; gap: .8rem; padding: 1rem; border: 2px solid var(--border); border-radius: 1.1rem; background: var(--soft); cursor: pointer; }
+.mode-card.selected { border-color: var(--primary); box-shadow: 0 0 0 .2rem color-mix(in srgb, var(--primary) 13%, transparent); }
+.mode-card input { width: 1.2rem; height: 1.2rem; flex: 0 0 auto; }
+.mode-card span { display: grid; gap: .35rem; }
+.mode-card small { line-height: 1.4; }
+.mode-card em { width: fit-content; padding: .25rem .55rem; border-radius: 999px; background: #fff0c7; color: #654500; font-size: .75rem; font-style: normal; font-weight: 850; }
+.mode-card.future { opacity: .7; cursor: not-allowed; }
+.video-result { display: grid; justify-items: center; gap: 1rem; margin-top: 1rem; padding: 1rem; border-radius: 1.2rem; background: var(--soft); }
+.video-result video { width: min(46rem, 100%); max-height: 60vh; border-radius: 1rem; background: #000; }
+.download-button { padding: .75rem 1.2rem; border-radius: 999px; color: #fff; background: var(--primary); font-weight: 850; text-decoration: none; }
+
+.spinner {
+  font-size: 2.2rem;
+  animation: create-slides 1s ease-in-out infinite;
+}
+
+.done {
+  font-size: 2.2rem;
+}
+
+@keyframes create-slides {
+  0%, 100% { transform: scale(.9) rotate(-4deg); opacity: .65; }
+  50% { transform: scale(1.1) rotate(4deg); opacity: 1; }
+}
+
+body {
+  background:
+    radial-gradient(circle at 90% 5%, color-mix(in srgb, var(--primary) 16%, transparent), transparent 28rem),
+    var(--soft);
+}
+
+.topbar,
+.panel,
+.tabs button,
+.upload-card,
+.preview,
+.loading-card {
+  backdrop-filter: blur(14px);
+}
+
+.topbar {
+  box-shadow: 0 .35rem 1.5rem #173a680d;
+}
+
+.saved-badge {
+  align-self: center;
+  padding: .42rem .7rem;
+  border-radius: 999px;
+  color: #16734a;
+  background: #dff8eb;
+  font-size: .78rem;
+  font-weight: 850;
+  white-space: nowrap;
+}
+
+.panel {
+  border-width: 1px;
+  border-radius: 1.75rem;
+  box-shadow: 0 1.25rem 3.5rem #173a6817;
+}
+
+.tabs button,
+.primary,
+.upload-card button,
+input,
+select,
+textarea {
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+.tabs button:hover,
+.primary:not(:disabled):hover,
+.upload-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 .65rem 1.2rem #173a681c;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--primary) 15%, transparent);
+}
+
+.upload-card,
+.settings-grid > label:not(.wide),
+.consent,
+.preview,
+.loading-card {
+  border-radius: 1.25rem;
+}
+
+.primary {
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--primary), color-mix(in srgb, var(--primary) 72%, #6639d7));
+}
+
+@media (max-width: 760px) {
+  .saved-badge { display: none; }
+  .panel { border-radius: 1.25rem; }
+  .mode-grid { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner { animation: none; }
+}

@@ -1,0 +1,53 @@
+# Dependencies and virtual environments
+node_modules/
+.venv/
+venv/
+
+# Build output and caches
+dist/
+.ia-index/
+*.ia-index.json
+.vite/
+.cache/
+.turbo/
+coverage/
+*.tsbuildinfo
+*.py[cod]
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+*.local
+*.pem
+*.key
+*.p12
+*.pfx
+*.token
+credentials*.json
+.secrets/
+
+# Logs and OS/editor settings
+*.log
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+.eslintcache
+
+# Local AI model downloads and provider caches
+models-cache/
+.huggingface/
+
+# Generated local media (may contain personal data)
+generated-output/
+APP-Semininario-Dos/generated-output/
+
+# Generated copies of the TypeScript Vite config
+APP-Semininario-Dos/frontend/vite.config.js
+APP-Semininario-Dos/frontend/vite.config.d.ts
